@@ -42,11 +42,11 @@ def show_logo_and_meta(ticker):
         stock = yf.Ticker(ticker)
         info = stock.info
         st.markdown(f"### {info.get('longName', ticker)}")
-        st.markdown(f"**Sector**: {info.get('sector', 'N/A')}  
-**Industry**: {info.get('industry', 'N/A')}")
+        st.markdown(f"**Sector**: {info.get('sector', 'N/A')}")
+        st.markdown(f"**Industry**: {info.get('industry', 'N/A')}")
         st.markdown(f"**Current Price**: ${info.get('currentPrice', 'N/A')}")
-        st.markdown(f"**52-Week High**: ${info.get('fiftyTwoWeekHigh', 'N/A')}  
-**52-Week Low**: ${info.get('fiftyTwoWeekLow', 'N/A')}")
+        st.markdown(f"**52-Week High**: ${info.get('fiftyTwoWeekHigh', 'N/A')}")
+        st.markdown(f"**52-Week Low**: ${info.get('fiftyTwoWeekLow', 'N/A')}")
 
 # CHART VISUALIZATION
 def show_moving_averages(ticker):

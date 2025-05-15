@@ -1,9 +1,9 @@
 
-# Streamlit Stock Intelligence Dashboard (Final Version)
+# Streamlit Stock Intelligence Dashboard (Fixed)
 
 ## Setup Instructions
 
-1. Add your API keys in a `.streamlit/secrets.toml` file like this:
+1. Create `.streamlit/secrets.toml` with your keys:
 ```
 [api]
 fmp_key = "your_fmp_api_key"
@@ -23,5 +23,5 @@ streamlit run stock_dashboard_app.py
 ```
 
 ## Notes
-- SQLite is removed for Streamlit Cloud compatibility.
-- Designed for deployment at https://streamlit.io/cloud.
+- Compatible with Streamlit Cloud and local use.
+- SQLite removed. Syntax error fixed.

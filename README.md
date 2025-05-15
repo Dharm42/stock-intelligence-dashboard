@@ -1,10 +1,9 @@
 
-# Stock Intelligence Dashboard (Debugged)
+# Streamlit Stock Intelligence Dashboard (Final Version)
 
-## How to Run
+## Setup Instructions
 
-1. **Create `secrets.toml` in `.streamlit` folder** (same level as app)
-
+1. Add your API keys in a `.streamlit/secrets.toml` file like this:
 ```
 [api]
 fmp_key = "your_fmp_api_key"
@@ -13,7 +12,7 @@ iex_key = "your_iex_cloud_key"
 openai_key = "your_openai_api_key"
 ```
 
-2. Install dependencies:
+2. Install requirements:
 ```
 pip install -r requirements.txt
 ```
@@ -23,4 +22,6 @@ pip install -r requirements.txt
 streamlit run stock_dashboard_app.py
 ```
 
-You can deploy this on [Streamlit Cloud](https://streamlit.io/cloud) using the same structure.
+## Notes
+- SQLite is removed for Streamlit Cloud compatibility.
+- Designed for deployment at https://streamlit.io/cloud.

@@ -1,0 +1,7 @@
+streamlit
+openai
+requests
+yfinance
+pandas
+numpy
+sqlite3
